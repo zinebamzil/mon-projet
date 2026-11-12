@@ -1,0 +1,20 @@
+name: Mon premier CI
+
+on:
+  push:
+    branches:
+      - feature-zineb
+
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Recuperer le code
+        uses: actions/checkout@v4
+
+      - name: Afficher un message
+        run: echo "Bonjour GitHub Actions !"
+
+      - name: Verifier les fichiers
+        run: ls -la
