@@ -17,4 +17,4 @@ jobs:
         run: echo "Bonjour GitHub Actions !"
 
       - name: Verifier les fichiers
-        run: ls -la
+        run: cat fichier-makaynch.txt
